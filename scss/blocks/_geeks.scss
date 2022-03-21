@@ -1,0 +1,105 @@
+.geeks {
+    background-color: #f8f8f8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.geeks__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.geeks__heading {
+    font-size: 60px;
+    line-height: 91%;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+.list-geeks {
+    display: flex;
+    margin-left: -30px;
+    @include list-unstyled;
+}
+.list-geeks__item {
+    max-width: 387px;
+    width: 100%;
+    margin-left: 30px;
+}
+.list-geeks__item:before {
+    display: block;
+    content:'';
+    background-repeat: no-repeat;
+    width: 387px;
+    height: 387px;
+    padding: 23px 24px;
+    background-color:#fff;
+    margin-bottom: 40px;
+    background-position: center center;
+    background-size: 340px 340px;
+}
+.list-geeks__item:first-child:before {
+    background-image: url("../../images/couple-smiling.png");
+}
+.list-geeks__item:nth-child(2):before {
+    background-image: url("../../images/women-and-daughter.png");
+}
+.list-geeks__item:last-child:before {
+    background-image: url("../../images/girl-with-glasses-and-books.png");
+}
+.list-geeks__heading {
+    font-size: 26px;
+    line-height: 91%;
+}
+.list-geeks__desc {
+    font-size: 18px;
+    color: rgba(13, 13, 13, 0.6);
+    line-height: 26px;
+    margin-bottom: 0;
+}
+@include breakpoint-down(1300px) {
+    .list-geeks {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .list-geeks__item:not(.list-geeks__item:last-child) {
+        margin-bottom: 30px;
+    }
+}
+@include breakpoint-down(820px) {
+    .list-geeks {
+        margin-left: 0px;
+    }
+    .list-geeks__item {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .list-geeks__item:not(.list-geeks__item:last-child) {
+        margin-bottom: 40px;
+    }
+}
+@include breakpoint-down(550px) {
+    .geeks {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .geeks__heading {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 36px;
+    }
+    .list-geeks__item {
+        max-width: 335px;
+    }
+    .list-geeks__heading {
+        display: inline-block;
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .list-geeks__item:before {
+        width: 315px;
+        height: 315px;
+        padding: 20px 20px;
+        background-size: 295px 295px;
+    }
+
+}

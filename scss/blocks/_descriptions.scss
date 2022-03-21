@@ -1,0 +1,71 @@
+.description {
+    padding-top: 95px;
+    padding-bottom: 115px;
+}
+.description__container {
+    background-color: #fff6f6;
+    padding: 80px 65px;
+}
+.list-description {
+    @include list-unstyled;
+    margin-left: -30px;
+    display: flex;
+}
+.list-description__item {
+    max-width: 305px;
+    margin-left: 30px;
+}
+.list-description__item::before {
+    content: '';
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 30px;
+    background-size: 34px 34px;
+}
+.list-description__desc {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(13, 13, 13, 0.6);
+    margin-bottom: 0;
+}
+.list-description__item:first-child:before {
+    background-image: url("../../images/delivery-truck-icon.svg");
+}
+.list-description__item:nth-child(2):before {
+    background-image: url("../../images/medal-icon.svg");
+}
+.list-description__item:nth-child(3):before {
+    background-image: url("../../images/package-icon.svg");
+}
+.list-description__item:last-child:before {
+    background-image: url("../../images/tshirt-icon.svg");
+}
+
+@include breakpoint-down(1000px) {
+    .list-description {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@include breakpoint-down(768px) {
+    .list-description {
+        margin-left: 0;
+    }
+    .list-description__item {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+}
+@include breakpoint-down(500px) {
+    .description__container {
+        padding: 30px;
+    }
+    .list-description__desc {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

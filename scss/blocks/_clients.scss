@@ -1,18 +1,11 @@
+.clients {
+    margin-bottom: 115px;
+}
 .clients__container {
     display: flex;
     justify-content: space-between;
     background-color: #fff6f6;
     padding: 85px 74px;
-}
-.clients__container:after {
-    content: '';
-    width: 485px;
-    height: 365px;
-    background-size: 487px 365px;
-    background-position: calc(50%) calc(50%);
-    background-repeat: no-repeat;
-    margin-left: 30px;
-    background-image: url("../../images/whats-in-box-section-bg.png");
 }
 .list-clients {
     max-width: 481px;
@@ -37,4 +30,59 @@
 }
 .list-clients__desc:last-child {
     margin-bottom: 0;
+}
+.clients__img {
+    width: 487px;
+    height: 365px;
+    margin-left: 30px;
+}
+
+@include breakpoint-down (1110px) {
+    .clients__container {
+        align-items: center;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .clients__heading {
+        font-size: 44px;
+    }
+    .list-clients__desc {
+        font-size: 16px;
+    }
+    .clients__img {
+        width: 440px;
+        height: 330px;
+    }
+}
+@include breakpoint-down (870px){
+    .clients__img {
+        width: 380px;
+        height: 290px;
+    }
+
+}
+@include breakpoint-down (700px){
+    
+    .clients__container {
+        flex-direction: column;
+    }
+    .clients__wrapper {
+        margin-bottom: 50px;
+    }
+    .clients__heading {
+        font-size: 36px;
+        text-align: center;
+    }
+    .list-clients__desc {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .clients__img {
+        max-width: 335px;
+        width: 100%;
+        max-height: 251px;
+        height: 100%;
+        margin-left: 0;
+    }
+
 }
