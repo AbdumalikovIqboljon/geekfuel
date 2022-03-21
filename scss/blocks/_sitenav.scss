@@ -1,0 +1,94 @@
+.sitenav__list {
+  display: flex;
+  @include list-unstyled;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #222;
+
+  &:hover {
+    background-color: gold;
+  }
+
+  &::after {
+    @include triangle-down(5px);
+    content: "";
+  }
+}
+
+
+@include breakpoint-down(850px) {
+  .sitenav__link::after {
+    display: none;
+  }
+}
+
+@include breakpoint-between(500px, 550px) {
+  body {
+    background-color: black;
+  }
+}
+
+
+
+
+/* Nesting: psevdoelement, psevdoklasslarda */
+
+
+/*
+BUNDAY QILMANG!
+.sitenav {
+  ul {
+    padding: 0;
+
+    li {
+      background-color: black;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+*/
+
+/*
+BUNDAY YOZMANG!
+.sitenav {
+  background-color: pink;
+
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    text-decoration: none;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+
+    }
+
+    &::after {
+
+    }
+
+    &:hover::after {
+
+    }
+  }
+}
+ */
