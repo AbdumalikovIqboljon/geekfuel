@@ -1,4 +1,5 @@
 .site-header {
+  display: none;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
@@ -8,10 +9,4 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@include breakpoint-down(900px) {
-  .site-header {
-    background-color: gold;
-  }
 }

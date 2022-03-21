@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+      url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+      url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -9,15 +27,17 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: $body-bg;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 400;
   color: $text-color;
 }
 

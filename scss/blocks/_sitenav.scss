@@ -8,7 +8,8 @@
 }
 
 .sitenav__link {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-weight: bold;
   color: #222;
@@ -16,25 +17,24 @@
   &:hover {
     background-color: gold;
   }
-
   &::after {
-    @include triangle-down(5px);
-    content: "";
+    background-image: url('../../images/plus-icon.svg');
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
   }
 }
 
-
-@include breakpoint-down(850px) {
-  .sitenav__link::after {
-    display: none;
-  }
+.dropdown-menu {
+  display: none;
+}
+.hidden {
+  display: block;
 }
 
-@include breakpoint-between(500px, 550px) {
-  body {
-    background-color: black;
-  }
-}
 
 
 
