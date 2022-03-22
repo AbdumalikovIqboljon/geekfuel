@@ -1134,6 +1134,7 @@ BUNDAY YOZMANG!
   position: absolute;
   display: inline-block;
   text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
   bottom: -4.5%;
   left: 100px;
@@ -1308,8 +1309,95 @@ BUNDAY YOZMANG!
   width: 100%;
 }
 
+.reveals__heading {
+  font-size: 60px;
+  line-height: 91%;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.reveals__desc {
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(13, 13, 13, 0.6);
+  margin-bottom: 25px;
+}
+
+.reveals__desc:last-of-type {
+  margin-bottom: 40px;
+}
+
+.reveals__link {
+  display: inline-block;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 91%;
+  color: #fff;
+  background-color: #ff5050;
+  padding: 20px 38px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.reveals__link:hover {
+  background-color: rgba(255, 80, 80, 0.7);
+}
+
 .reveals__img {
   width: 699px;
   height: 551px;
+  margin-left: 105px;
+}
+
+.every-day {
+  padding-top: 350px;
+  padding-bottom: 350px;
+  background-image: url("../../images/man-in-front-of-big-plants-bg-desktop.png");
+  background-size: 1920px 1033px;
+  background-repeat: no-repeat;
+  background-position: calc(50%) calc(50%);
+}
+
+.every-day__info {
+  max-width: 387px;
+  width: 100%;
+  color: #fff;
+}
+
+.every-day__supheading {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 91%;
+  text-transform: uppercase;
+}
+
+.every-day__heading {
+  font-size: 60px;
+  line-height: 91%;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.every-day__desc {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+
+.every-day__link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 38px;
+  text-transform: uppercase;
+  background-color: #ff5050;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.every-day__link:hover {
+  background-color: rgba(255, 80, 80, 0.6);
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,43 @@
+.every-day {
+    padding-top: 350px;
+    padding-bottom: 350px;
+    background-image: url("../../images/man-in-front-of-big-plants-bg-desktop.png");
+    background-size: 1920px 1033px;
+    background-repeat: no-repeat;
+    background-position: calc(50%) calc(50%);
+}
+.every-day__info {
+    max-width: 387px;
+    width: 100%;
+    color: #fff;
+}
+.every-day__supheading {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 91%;
+    text-transform: uppercase;
+}
+.every-day__heading {
+    font-size: 60px;
+    line-height: 91%;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.every-day__desc {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+.every-day__link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 38px;
+    text-transform: uppercase;
+    background-color: rgb(255, 80, 80);
+    transition: background-color 0.3s linear;
+    &:hover {
+        background-color: rgba(255, 80, 80, 0.6);
+    }
+}

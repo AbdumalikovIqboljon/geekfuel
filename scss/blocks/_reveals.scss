@@ -10,7 +10,37 @@
     max-width: 416px;
     width: 100%;
 }
+.reveals__heading {
+    font-size: 60px;
+    line-height: 91%;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.reveals__desc {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(13, 13, 13, 0.6);
+    margin-bottom: 25px;
+}
+.reveals__desc:last-of-type {
+    margin-bottom: 40px;
+}
+.reveals__link {
+    display: inline-block;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 91%;
+    color: #fff;
+    background-color: rgb(255, 80, 80);
+    padding: 20px 38px;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+    &:hover {
+        background-color:rgba(255, 80, 80, 0.7);
+    }
+}
 .reveals__img {
     width: 699px;
     height: 551px;
+    margin-left: 105px;
 }
