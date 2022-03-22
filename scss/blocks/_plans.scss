@@ -1,0 +1,126 @@
+.plans {
+    background-color: #f8f8f8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.plans__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plans__top {
+    margin-bottom: 85px;
+    text-align: center;
+}
+.plans__heading {
+    font-size: 60px;
+    line-height: 91%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.plans__desc {
+    font-size: 18px;
+    color: rgb(13, 13, 13);
+    line-height: 26px;
+    margin-bottom: 0;
+}
+.plans__desc--bold {
+    text-transform: uppercase;
+}
+.list-plans {
+    display: flex;
+    margin-left: -30px;
+    @include list-unstyled;
+}
+.list-plans__item {
+    position: relative;
+    max-width: 387px;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    padding-bottom: 67px;
+    margin-left: 30px;
+}
+.list-plans__date {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.price {
+    font-size: 34px;
+    line-height: 38px;
+}
+.month {
+    font-size: 16px;
+    color: rgba(13, 13, 13, 0.4);
+    line-height: 26px;
+}
+.list-plans__link {
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    bottom: -4.5%;
+    left: 100px;
+    padding: 20px 38px;
+    font-size: 20px;
+    line-height: 22px;
+    background-color: #ff5050;
+    transition: background-color 0.2s linear;
+    &:hover {
+        background-color: rgba(255, 80, 80, 0.7);
+    }
+}
+
+@include breakpoint-down(1300px) {
+    .list-plans {
+        flex-wrap: wrap;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .list-plans__item {
+        margin-bottom: 75px;
+    }
+}
+@include breakpoint-down(800px) {
+    .list-plans__item {
+        max-width: 335px;
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 47px;
+    }
+    .list-plans__link {
+        left: 75px;
+    }
+}
+@include breakpoint-down(500px) {
+    .list-plans__item {
+        margin-left: 0;
+    }
+    .plans__heading {
+        font-size: 36px;
+        line-height: 91%;
+    }
+    .plans__desc {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .list-plans__date {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .price {
+        font-size: 28px;
+        line-height: 31px;
+    }
+    .month {
+        font-size: 14px;
+    }
+    .list-plans__link {
+        padding: 16px 31px;
+    }
+}
+@include breakpoint-down (360px) {
+    
+}

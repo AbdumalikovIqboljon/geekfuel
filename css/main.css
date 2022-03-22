@@ -1047,4 +1047,269 @@ BUNDAY YOZMANG!
     line-height: 21px;
   }
 }
+
+.plans {
+  background-color: #f8f8f8;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.plans__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plans__top {
+  margin-bottom: 85px;
+  text-align: center;
+}
+
+.plans__heading {
+  font-size: 60px;
+  line-height: 91%;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.plans__desc {
+  font-size: 18px;
+  color: #0d0d0d;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.plans__desc--bold {
+  text-transform: uppercase;
+}
+
+.list-plans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-plans__item {
+  position: relative;
+  max-width: 387px;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px;
+  padding-bottom: 67px;
+  margin-left: 30px;
+}
+
+.list-plans__date {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 34px;
+  line-height: 38px;
+}
+
+.month {
+  font-size: 16px;
+  color: rgba(13, 13, 13, 0.4);
+  line-height: 26px;
+}
+
+.list-plans__link {
+  position: absolute;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  bottom: -4.5%;
+  left: 100px;
+  padding: 20px 38px;
+  font-size: 20px;
+  line-height: 22px;
+  background-color: #ff5050;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.list-plans__link:hover {
+  background-color: rgba(255, 80, 80, 0.7);
+}
+
+@media only screen and (max-width: 1300px) {
+  .list-plans {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .list-plans__item {
+    margin-bottom: 75px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .list-plans__item {
+    max-width: 335px;
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 47px;
+  }
+  .list-plans__link {
+    left: 75px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .list-plans__item {
+    margin-left: 0;
+  }
+  .plans__heading {
+    font-size: 36px;
+    line-height: 91%;
+  }
+  .plans__desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .list-plans__date {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .price {
+    font-size: 28px;
+    line-height: 31px;
+  }
+  .month {
+    font-size: 14px;
+  }
+  .list-plans__link {
+    padding: 16px 31px;
+  }
+}
+
+.details:before {
+  content: '';
+  display: block;
+  width: 307px;
+  height: 305px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: 307px 305px;
+  background-position: center center;
+}
+
+.details--first:before {
+  background-image: url("../../images/billed-monthly-img.png");
+}
+
+.details--second:before {
+  background-image: url("../../images/prepay-boxes-img.png");
+}
+
+.details--third:before {
+  background-image: url("../../images/prepay-6-boxes-img.png");
+}
+
+.details__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.details__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.details__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details__text:not(.details__text:last-child) {
+  margin-bottom: 8px;
+}
+
+.details__text:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: center center;
+  background-image: url("../../images/checked-icon.svg");
+}
+
+.details__text--blocked {
+  color: rgba(13, 13, 13, 0.3);
+}
+
+.details__text--blocked:before {
+  background-image: url("../../images/close-icon-black.svg");
+}
+
+@media only screen and (max-width: 800px) {
+  .details:before {
+    width: 241px;
+    height: 240px;
+    background-size: 241px 240px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .details__heading {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .details__text {
+    font-size: 14px;
+  }
+}
+
+.reveals {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.reveals__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reveals__wrapper {
+  max-width: 416px;
+  width: 100%;
+}
+
+.reveals__img {
+  width: 699px;
+  height: 551px;
+}
 /*# sourceMappingURL=main.css.map */
