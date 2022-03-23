@@ -1350,6 +1350,75 @@ BUNDAY YOZMANG!
   margin-left: 105px;
 }
 
+@media only screen and (max-width: 1300px) {
+  .reveals__img {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .reveals__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reveals__heading {
+    font-size: 44px;
+  }
+  .reveals__img {
+    width: 550px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .reveals__wrapper {
+    margin-bottom: 50px;
+  }
+  .reveals__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reveals__img {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .reveals__img {
+    max-width: 335px;
+    width: 100%;
+    height: 100%;
+    max-height: 264px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .reveals {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .reveals__heading {
+    font-size: 36px;
+  }
+  .reveals__desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .reveals__link {
+    padding: 17px 32px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .reveals__heading {
+    font-size: 32px;
+  }
+}
+
 .every-day {
   padding-top: 350px;
   padding-bottom: 350px;
@@ -1399,5 +1468,159 @@ BUNDAY YOZMANG!
 
 .every-day__link:hover {
   background-color: rgba(255, 80, 80, 0.6);
+}
+
+@media only screen and (max-width: 800px) {
+  .every-day {
+    padding-bottom: 170px;
+    background-size: 1420px 733px;
+  }
+  .every-day__supheading {
+    font-size: 18px;
+  }
+  .every-day__heading {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .every-day__heading {
+    font-size: 36px;
+  }
+  .every-day__desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .every-day__link {
+    padding: 16px 32px;
+  }
+}
+
+.design {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.design__top {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.design__heading {
+  font-size: 60px;
+  line-height: 91%;
+  text-transform: uppercase;
+}
+
+.list-design {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+}
+
+.list-design__item {
+  text-align: center;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.list-design__item__heading {
+  font-size: 26px;
+  line-height: 91%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.list-design__item__price {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.wrapper--img {
+  position: relative;
+  padding: 20px;
+  background-color: lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: display 1s linear;
+  transition: display 1s linear;
+  margin-bottom: 30px;
+}
+
+.wrapper--img .button {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  right: 50%;
+  font-size: 22px;
+  line-height: 91%;
+  text-transform: uppercase;
+  padding: 20px 115px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: display 1s linear;
+  transition: display 1s linear;
+  white-space: nowrap;
+}
+
+.wrapper--img:hover .button {
+  display: block;
+}
+
+.fandoms {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.fandoms__heading {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 91%;
+  margin-bottom: 50px;
+}
+
+.fandoms__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -70px;
+}
+
+.fandoms__link {
+  text-decoration: none;
+  margin-left: 70px;
+}
+
+.fandoms__link img {
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.fandoms__link:hover img {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

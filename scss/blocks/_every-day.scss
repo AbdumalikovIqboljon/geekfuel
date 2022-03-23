@@ -41,3 +41,27 @@
         background-color: rgba(255, 80, 80, 0.6);
     }
 }
+@include breakpoint-down(800px) {
+    .every-day {
+        padding-bottom: 170px;
+        background-size: 1420px 733px;
+    }
+    .every-day__supheading {
+        font-size: 18px;
+    }
+    .every-day__heading {
+        font-size: 44px;
+    }
+}
+@include breakpoint-down(500px) {
+    .every-day__heading {
+        font-size: 36px;
+    }
+    .every-day__desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .every-day__link {
+        padding: 16px 32px;
+    }
+}

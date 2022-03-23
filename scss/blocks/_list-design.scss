@@ -1,0 +1,50 @@
+.list-design {
+    @include list-unstyled;
+    display: flex;
+    margin-left: -30px;
+}
+.list-design__item {
+    text-align: center;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.list-design__item__heading {
+    font-size: 26px;
+    line-height: 91%;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.list-design__item__price {
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.wrapper--img {
+    position: relative;
+    padding: 20px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: display 1s linear;
+    margin-bottom: 30px;
+}
+.wrapper--img .button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    transform: translate(50%, -50%);
+    right: 50%;
+    font-size: 22px;
+    line-height: 91%;
+    text-transform: uppercase;
+    padding: 20px 115px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: display 1s linear;
+    white-space: nowrap;
+}
+.wrapper--img:hover .button {
+    display: block;
+}
