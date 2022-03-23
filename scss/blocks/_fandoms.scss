@@ -27,4 +27,26 @@
     opacity: 1;
 }
 
-.
+@include breakpoint-down(1220px) {
+    .fandoms__list {
+        flex-wrap: wrap;
+    }
+    .fandoms__link {
+        margin-bottom: 30px;
+    }
+}
+@include breakpoint-down(900px) {
+    .fandoms__link:nth-child(6) {
+        margin-left: 0;
+    }
+}
+@include breakpoint-down(770px) {
+    .fandoms__link:nth-child(6) {
+        margin-left: 70px;
+    }
+}
+@include breakpoint-down(900px) {
+    .fandoms__link{
+        margin-left: 50px;
+    }
+}

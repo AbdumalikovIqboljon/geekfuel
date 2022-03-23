@@ -1623,4 +1623,32 @@ BUNDAY YOZMANG!
 .fandoms__link:hover img {
   opacity: 1;
 }
+
+@media only screen and (max-width: 1220px) {
+  .fandoms__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .fandoms__link {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .fandoms__link:nth-child(6) {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .fandoms__link:nth-child(6) {
+    margin-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .fandoms__link {
+    margin-left: 50px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
